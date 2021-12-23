@@ -1,4 +1,4 @@
-//Searching in a sorted and rotated array
+//Searching in a sorted and rotated array.
 package main
 
 import "fmt"
