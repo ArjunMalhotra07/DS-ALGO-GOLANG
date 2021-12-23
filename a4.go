@@ -1,4 +1,4 @@
-//Searching in a sorted and rotated array
+//Minimum element in a sorted and rotated array
 package main
 
 import "fmt"
@@ -35,16 +35,7 @@ func main() {
 	}
 
 	print(arr, n)
-	fmt.Println("Enter the element you want to search ")
-	var f int
-	fmt.Scanln(&f)
-	ls := linearSearch(arr, n, f)
-	if ls == -1 {
-		fmt.Println("Element Not Found")
-	} else {
-		fmt.Printf("Element %d Found at %dth position", f, ls)
-	}
-
+	checkMinimum(arr, n)
 }
 func bSort(arr []int, n int) {
 	for i := 0; i < n-1; i++ {
@@ -59,7 +50,7 @@ func bSort(arr []int, n int) {
 }
 func print(arr []int, n int) {
 	for i := 0; i < n; i++ {
-		fmt.Printf("%d ", arr[i])
+		fmt.Printf("%d \n", arr[i])
 	}
 }
 
@@ -92,12 +83,13 @@ func rightRotatebyOne(arr []int, n int) {
 	}
 	arr[0] = temp
 }
-func linearSearch(arr []int, n int, f int) int {
-	for i := 0; i < n; i++ {
-		if arr[i] == f {
-			return i
+func checkMinimum(arr []int, n int) {
+	var temp int
+	for i := 0; i < n-1; i++ {
+		if arr[i] < arr[i+1] {
+			temp = arr[i]
 		}
 	}
-	return -1
+	fmt.Printf("smallest element is at %dth index", temp)
 
 }
