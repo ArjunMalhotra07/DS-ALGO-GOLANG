@@ -15,7 +15,7 @@ func main() {
 	}
 	fmt.Println("Your array is: ", arr)
 
-	ans := binarySearch(arr, 50)
+	ans := binarySearch(arr, -1)
 	fmt.Println(ans)
 
 }
@@ -28,7 +28,7 @@ func binarySearch(arr []int, target int) int {
 		mid := start + (end-start)/2
 
 		if arr[mid] > target {
-			start = mid - 1
+			end = mid - 1
 		} else if arr[mid] < target {
 			start = mid + 1
 		} else {
