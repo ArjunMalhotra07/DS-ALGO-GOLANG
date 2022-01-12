@@ -42,11 +42,11 @@ func (l *linkedList) insertBefore(value int) {
 	return
 }
 
-func (l *linkedList) reverseLinkedList() {
+func (l *linkedList) reverseLinkedList() *node {
 	var previousNode, nextNode *node
 	currentNode := l.head
 	if currentNode == nil {
-		return
+		return currentNode
 	}
 	for currentNode != nil {
 		nextNode, currentNode.next = currentNode.next, previousNode
@@ -55,7 +55,7 @@ func (l *linkedList) reverseLinkedList() {
 
 	}
 	l.head = previousNode
-	//return data
+	return l.head
 }
 
 //Traveersing through and printing the list
