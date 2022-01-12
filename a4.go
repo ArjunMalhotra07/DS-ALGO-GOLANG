@@ -90,6 +90,6 @@ func checkMinimum(arr []int, n int) {
 			temp = arr[i]
 		}
 	}
-	fmt.Printf("smallest element is at %dth index", temp)
+	fmt.Printf("smallest element is %d", temp)
 
 }
