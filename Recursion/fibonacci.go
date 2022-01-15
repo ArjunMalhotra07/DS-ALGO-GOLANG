@@ -10,7 +10,7 @@ func main() {
 	fmt.Println()
 	fibonacciTerms(first, second, 15)
 	fmt.Println()
-	ans := fibonacciNumber(4)
+	ans := fibonacciNumber(10)
 	fmt.Println(ans)
 }
 
