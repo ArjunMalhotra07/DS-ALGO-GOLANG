@@ -3,15 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello")
+	f := fmt.Println
 	myStack := Stack{}
 	myStack.Push(100)
 	myStack.Push(200)
 	myStack.Push(300)
-	fmt.Println(myStack)
-	removed := myStack.Pop()
-	fmt.Println(removed)
-	fmt.Println(myStack)
+	f(myStack)
+	f("Removed ", myStack.Pop())
+	f(myStack)
 }
 
 type Stack struct {

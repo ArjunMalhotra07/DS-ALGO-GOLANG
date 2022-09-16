@@ -3,20 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	n := 155
-	if n < 0 {
-		n *= -1
-	}
-	fmt.Print(product(n))
+	fmt.Print(reverse(1234))
 }
+func reverse(n int) int {
+	var ans int = 0
+	var r int = 0
 
-func product(n int) int {
-	ans := 1
-	if n == 0 {
-		return ans
-	}
-	ans = n % 10
-	n /= 10
+	ans = n / 10
+	r = n % 10
 
-	return ans * product(n)
+	return (n%10)*10 + reverse(ans)
 }

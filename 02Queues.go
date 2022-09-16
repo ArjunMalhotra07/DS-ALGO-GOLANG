@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello")
+	f := fmt.Println
 	myQueue := Queue{}
 	myQueue.Enque(100)
 	myQueue.Enque(200)
 	myQueue.Enque(300)
-	fmt.Println(myQueue)
-	removed := myQueue.Deque()
-	fmt.Println(removed, "Dequed")
-	fmt.Println(myQueue)
+	f(myQueue)
+	f("Dequed", myQueue.Deque())
+
+	f(myQueue)
 }
 
 type Queue struct {
