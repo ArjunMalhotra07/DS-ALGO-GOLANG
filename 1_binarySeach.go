@@ -7,7 +7,6 @@ import (
 
 func main() {
 	f := fmt.Println
-	// c := fmt.Print
 	p := fmt.Printf
 
 	// Entering length of array
@@ -23,7 +22,7 @@ func main() {
 	}
 	f("Your array is: ", arr)
 
-	// Entering length of array
+	// Entering Number to be searched
 	f("Enter Number to be searched in array")
 	var numberToBeSearched int
 	fmt.Scanln(&numberToBeSearched)
