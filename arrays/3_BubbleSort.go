@@ -1,8 +1,8 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func BubbleSorthelper() {
 	var arr = []int{5, 4, 3, 2, 1}
 	BubbleSort(arr)
 	fmt.Println(arr)

@@ -1,8 +1,8 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func SelectionSorthelper() {
 	var arr = []int{4, 8, 9, 101, 0, 1}
 	SelectionSort(arr)
 	fmt.Println(arr)
@@ -12,11 +12,11 @@ func SelectionSort(arr []int) {
 	for i := 0; i < len(arr); i++ {
 		last := len(arr) - i - 1
 		maxIndex := getMaxIndex(arr, 0, last)
-		swap(arr, maxIndex, last)
+		swapfunc(arr, maxIndex, last)
 	}
 }
 
-func swap(arr []int, maxIndex int, last int) {
+func swapfunc(arr []int, maxIndex int, last int) {
 	temp := arr[maxIndex]
 
 	arr[maxIndex] = arr[last]

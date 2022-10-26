@@ -1,8 +1,8 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func factHelper() {
 	fmt.Println(fact(15))
 	fmt.Println(fact(5))
 }

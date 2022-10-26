@@ -1,14 +1,14 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func SelectionSortHelper() {
 	var arr = []int{2, 4, 5, 1, 3}
-	SelectionSort(arr)
+	Selectionsort(arr)
 	fmt.Println(arr)
 }
 
-func SelectionSort(arr []int) {
+func Selectionsort(arr []int) {
 	i := 0
 	for i < len(arr) {
 		correct := arr[i] - 1

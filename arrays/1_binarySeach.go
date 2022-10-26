@@ -1,11 +1,11 @@
 //WE KNOw ARRAY IS SORTED IN ASC ORDER
-package main
+package arrays
 
 import (
 	"fmt"
 )
 
-func main() {
+func BinarySearchAscHelper() {
 	f := fmt.Println
 	p := fmt.Printf
 

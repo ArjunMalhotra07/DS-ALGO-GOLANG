@@ -1,11 +1,11 @@
 //Find smallest number greater than or equal to Target Integer
 //Same can be done for greatest number smaller or equal to Target Integer
 
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func AscHelper() {
 	fmt.Println("Hi")
 
 	var x int = 5
