@@ -1,8 +1,8 @@
-package main
+package graphs
 
 import "fmt"
 
-func main() {
+func DetialsHelper() {
 	f := fmt.Println
 	f("Hello")
 	details()

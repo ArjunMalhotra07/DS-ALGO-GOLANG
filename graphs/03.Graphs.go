@@ -1,4 +1,4 @@
-package main
+package graphs
 
 import (
 	"fmt"
@@ -65,7 +65,7 @@ func (g *Graph) getVertex(k int) *Vertex {
 	return nil
 }
 
-func main() {
+func GraphsHelper() {
 	//f := fmt.Println
 	test := &Graph{}
 
